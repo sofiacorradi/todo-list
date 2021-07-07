@@ -6,7 +6,8 @@ class App extends Component {
     super(props);
     this.state = {
       tasks: [
-        { id: 1, 
+        { 
+          id: 1, 
           description: "Tomar café da manhã", 
           done: false
          },
