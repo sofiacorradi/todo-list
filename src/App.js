@@ -25,12 +25,6 @@ class App extends Component {
     }
   }
 
-  modifyTaskStatus(taskId, done) {
-    let state = Object.assign({}, this.state);
-    state.tasks.find(t => t.id === taskId).done = done;
-    this.setState(state);
-  }
-
   removeTask = (taskId) => () => {
     let state = Object.assign({}, this.state);
     state.tasks = state.tasks.filter(t => t.id !== taskId);
